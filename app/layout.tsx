@@ -23,8 +23,6 @@ export const metadata: Metadata = {
   description: "Sherdor Mebel uchun zamonaviy mebel boshqaruv web-ilovasi",
   generator: "v0.app",
   manifest: "/manifest.json",
-  themeColor: "#0891b2",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -70,3 +68,13 @@ export default function RootLayout({
     </html>
   )
 }
+import type { Viewport } from "next"
+
+export const viewport: Viewport = {
+  themeColor: "#0891b2",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
+
